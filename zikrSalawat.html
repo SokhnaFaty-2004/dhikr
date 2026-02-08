@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salawat</title>
+  </head>
+ 
+  <style>
+    .animate {
+  animation: pulse 0.3s ease;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.message {
+  margin-top: 10px;
+  font-size: 14px;
+  color: yellow;
+}
+
+    body {
+      display: flex;
+      flex-wrap: wrap;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      color:white;
+       background: #fdf6e3;
+    }
+    .contain {
+      width: 50vw;
+      background-color: #3498db;
+      text-align: center;
+      border-radius: 10px;
+      padding: 10px;
+      gap: 10px;
+      box-shadow: 1px 1px 1px;
+      align-items: center;
+      padding-bottom: 40px;
+    }
+    button{
+        width: 150px;
+        border: none;
+        border-radius: 10px;
+        height: 40px;
+    }
+      .contain h1{
+        color:rgba(250, 250, 5, 0.83);
+      }
+    .contain h3{
+        font-size: 36px;
+        font-weight: bold;
+    }
+    .contain p{
+        font-size: 15px;
+    }
+    body .pageMaxuzz{
+      width: 100%;
+    }
+    .maxuzz{
+      background-color: #3498db;
+    }
+    a{
+      text-decoration: none;
+      color: white;
+    }
+  </style>
+  <body>
+    <div class="contain">
+        <h1>Salawat</h1>
+   
+      <p>Allahumma Salli Ala Muhammadin Wa Ali Muhammad</p>
+      <p>اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ</p>
+      
+      <h3 id="compteur">0</h3>
+     <p id="message"></p>
+      <button id="btnPlus">+</button>
+      <button id="btnReset">Reset</button>
+    </div>
+    <div class="pageMaxuzz">
+    <button class="maxuzz"><a href="maxuzz.html">Wird Maxuzz</a></button>
+    </div>
+     <script src="scriptSalawat.js"></script>
+  </body>
+</html>
