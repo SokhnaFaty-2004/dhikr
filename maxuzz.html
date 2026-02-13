@@ -5,47 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wird Maaxuuz (Khaatim)</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        text-align: center;
-        padding: 20px;
-        background: #fdf6e3;
-        color: #333;
-      }
-      .arabe {
-        font-size: 2em;
-        color: #2c3e50;
-        margin: 20px 0;
-      }
-      .phonetic {
-        font-size: 1.2em;
-        color: #16a085;
-        margin-bottom: 20px;
-      }
-      button {
-        font-size: 1em;
-        padding: 10px 20px;
-        margin: 5px;
-        cursor: pointer;
-        border: none;
-        border-radius: 5px;
-        background-color: #3498db;
-        color: white;
-        transition: background-color 0.3s;
-      }
-      button:hover {
-        background-color: #2980b9;
-      }
-      body .pageSalawat{
-      width: 100%;
-    }
-    .salawat{
-      background-color: #3498db;
-    }
-    a{
-      text-decoration: none;
-      color: white;
-    }
+      *{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background: #fdf6e3;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Conteneur principal */
+.container{
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Titre */
+h1{
+  margin-bottom: 20px;
+}
+
+/* Texte arabe */
+.arabe {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  color: #2c3e50;
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+/* Phonétique */
+.phonetic {
+  font-size: clamp(1rem, 3vw, 1.3rem);
+  color: #16a085;
+  margin-bottom: 20px;
+}
+
+/* Boutons */
+button {
+  font-size: 1rem;
+  padding: 12px 20px;
+  margin: 8px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background-color: #3498db;
+  color: white;
+  transition: background-color 0.3s;
+  width: 100%;
+  max-width: 250px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Bouton retour */
+.pageSalawat{
+  margin-top: 20px;
+  width: 100%;
+}
+
+.salawat{
+  background-color: #3498db;
+  
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+/* -------- TABLETTE -------- */
+@media (min-width: 600px) {
+  button{
+    width: auto;
+  }
+}
+
     </style>
   </head>
   <body>
