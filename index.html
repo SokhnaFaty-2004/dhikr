@@ -36,7 +36,7 @@
       justify-content: center;
       align-items: center;
       color:white;
-       background: #fdf6e3;
+      background: #fdf6e3;
     }
     .contain {
       width: 50vw;
@@ -48,6 +48,10 @@
       box-shadow: 1px 1px 1px;
       align-items: center;
       padding-bottom: 40px;
+   
+  width: 90%;
+  max-width: 700px;
+
     }
     button{
         width: 150px;
@@ -75,6 +79,141 @@
       text-decoration: none;
       color: white;
     }
+      @media (min-width: 481px) and (max-width: 1024px) {
+
+  .contain {
+    max-width: 700px;
+    padding: 30px;
+  }
+
+  .contain h1 {
+    font-size: 32px;
+  }
+
+  .contain h3 {
+    font-size: 50px;
+  }
+
+  .contain p {
+    font-size: 18px;
+  }
+
+  button {
+    max-width: 250px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+
+.contain {
+  width: 90%;
+  max-width: 700px;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+  background: #fdf6e3;
+  padding: 15px;
+}
+
+/* Carte principale */
+.contain {
+  width: 100%;
+  max-width: 500px; /* limite sur grand écran */
+  background-color: #3498db;
+  text-align: center;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.contain h1{
+  color: rgba(250, 250, 5, 0.83);
+  margin-bottom: 10px;
+}
+
+.contain h3{
+  font-size: 40px;
+  margin: 15px 0;
+}
+
+.contain p{
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+/* Boutons */
+button{
+  width: 100%;
+  max-width: 200px;
+  border: none;
+  border-radius: 10px;
+  height: 45px;
+  margin: 8px 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Animation */
+.animate {
+  animation: pulse 0.3s ease;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}
+
+.message {
+  margin-top: 10px;
+  font-size: 14px;
+  color: yellow;
+}
+
+/* Bouton bas */
+.pageMaxuzz{
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.maxuzz{
+  background-color: #3498db;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+/* -------- RESPONSIVE MOBILE -------- */
+@media (max-width: 480px) {
+  .contain h3{
+    font-size: 32px;
+  }
+
+  .contain p{
+    font-size: 14px;
+  }
+}
+
+
+      
+    }
   </style>
   <body>
     <div class="contain">
@@ -89,7 +228,7 @@
       <button id="btnReset">Reset</button>
     </div>
     <div class="pageMaxuzz">
-    <button class="maxuzz"><a href="maxuzz.html">Wird Maxuzz</a></button>
+    <button class="maxuzz"><a href="maxuzz.html">Salawat</a></button>
     </div>
      <script src="scriptSalawat.js"></script>
   </body>

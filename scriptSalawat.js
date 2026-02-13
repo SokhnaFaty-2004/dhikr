@@ -12,25 +12,36 @@ function animerCompteur() {
     compteur.classList.remove("animate"); // retire la classe → permet de relancer l’animation
   }, 300); // 0.3s = durée de l’animation
 }
-function condition(){
+function condition() {
+
   if (count > 1947) {
     count = 0;
     compteur.style.color = "red";
-    message.textContent = "Bravo! Salawat complété,Compteur remis a Zero!";
-  } else if (count < 100) {
-    compteur.style.color = "white";
+    message.textContent = "Bravo ! Salawat complété, compteur remis à zéro !";
+  }
+
+  else if (count >= 1500) {
+    compteur.style.color = "orange";
     message.textContent = "";
-  } else if (count >= 100 || count > 500) {
-    compteur.style.color = "blue";
-    message.textContent = "";
-  } else if (count >= 500 && count > 1000) {
-    compteur.style.color = "green";
-    message.textContent = "";
-  } else if (count >= 1000 && count > 1500) {
+  }
+
+  else if (count >= 1000) {
     compteur.style.color = "yellow";
     message.textContent = "";
-  } else if (count >= 1500 && count > 1946) {
-    compteur.style.color = "orange";
+  }
+
+  else if (count >= 500) {
+    compteur.style.color = "green";
+    message.textContent = "";
+  }
+
+  else if (count >= 100) {
+    compteur.style.color = "blue";
+    message.textContent = "";
+  }
+
+  else {
+    compteur.style.color = "white";
     message.textContent = "";
   }
 }
